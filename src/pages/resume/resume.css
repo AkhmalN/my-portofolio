@@ -1,0 +1,30 @@
+hr{
+   border-top: 2px solid black;
+}
+
+.resume-container{
+   margin-top: 100px;
+   display: flex;
+   justify-content: center;
+}
+.resume{
+   border-radius: 20px;
+   padding: 10px;
+   width: 80%;
+}
+header{
+   display: flex;
+}
+.header-description div{
+   
+   border-right: 1px solid black;
+   margin-right: 5px;
+   margin-left: 5px;
+}
+.header-description{
+   display: flex;
+   justify-content: center;
+}
+.about-description{
+   border: 1px solid white;
+}

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+.about-details-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 100px;
+
+}
+
+.about-container {
+   font-family: 'Roboto Mono', monospace;
+   color: aliceblue;
+}
+
+.indented-text {
+   margin-left: 20px;
+}
+
+.about-content {
+   width: 60%;
+}
+
+.about-details {
+   display: flex;
+   width: 80%;
+   justify-content: center;
+}
+
+.about-details:nth-child(2) {
+   display: flex;
+   flex-direction: column;
+}
+
+.about-details-text {
+   font-family: 'Roboto Mono', monospace;
+   border: 1px solid #73777B;
+   padding: 1em;
+   border-radius: 20px;
+   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.about-details-skills {
+   display: flex;
+   height: auto;
+   margin-bottom: 20px;
+}
+.about-details-skills button{
+   margin-right: 10px;
+   background: #FBCA1F;
+   font-family: inherit;
+   padding: 0.6em 1.3em;
+   font-weight: 900;
+   font-size: 18px;
+   border: 3px solid black;
+   border-radius: 0.4em;
+   box-shadow: 0.1em 0.1em;
+}
+.about-details-skills button:hover{
+   transform: translate(-0.05em, -0.05em);
+   box-shadow: 0.15em 0.15em;
+}
+.about-details-skills button:focus{
+   outline: none;
+}
+.profile-options{
+   display: flex;
+   flex-direction: row;
+}
+.btn.highlighted-btn {
+   font-weight: bold;
+   background: #FBCA1F;
+   font-family: inherit;
+   padding: 0.6em 1.3em;
+   font-weight: 900;
+   font-size: 18px;
+   border: 3px solid black;
+   border-radius: 0.4em;
+   box-shadow: 0.1em 0.1em;
+   width: 200px;
+
+}
+
+.btn.highlighted-btn:hover {
+   transform: translate(-0.05em, -0.05em);
+   box-shadow: 0.15em 0.15em;
+}
+
+.btn.highlighted-btn:active {
+   transform: translate(0.05em, 0.05em);
+   box-shadow: 0.05em 0.05em;
+}
+
+.profile-picture {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0 3px 0px 0px #73777B;
+   border-radius: 50%;
+   height: 300px;
+   width: 300px;
+   background-color: #FFFDE3;
+   overflow: hidden;
+}
+
+.profile-picture-background {
+   height: 100%;
+   width: 90%;
+   background-image: url('/src/assets/WhatsApp_Image_2022-11-08_at_14.50.57-removebg-preview.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.about-details-evidence {
+   overflow: scroll;
+}
+
+.about-details-evidence::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+   background-color: #3C4048;
+}
+
+.about-details-evidence::-webkit-scrollbar {
+   width: 10px;
+   height: 10px;
+   background-color: #F5F5F5;
+}
+
+.about-details-evidence::-webkit-scrollbar-thumb {
+   background-color: #FBCA1F;
+   background-image: -webkit-linear-gradient(45deg,
+         rgba(255, 255, 255, .2) 25%,
+         transparent 25%,
+         transparent 50%,
+         rgba(255, 255, 255, .2) 50%,
+         rgba(255, 255, 255, .2) 75%,
+         transparent 75%,
+         transparent)
+}
+.about-details-evidence::-webkit-scrollbar-corner { background-color: #3C4048; }
+
+.about-details-pict {
+   display: flex;
+}
+
+.about-details-pict img {
+   width: 300px;
+   height: 300px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+
+@media(max-width : 768px){
+
+   .about-details-container{
+      margin: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+   .about-details{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+   .profile-options{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+   .about-details-pict{
+      width: 100%;
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
+   }
+   .about-details-pict img{
+      width: 600px;
+      height: 300px;
+   }
+   .about-content {
+      width: 100%;
+   }
+}

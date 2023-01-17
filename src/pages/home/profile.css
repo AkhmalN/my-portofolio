@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+.profile-details-name{
+   font-family: 'Roboto Mono', monospace;
+}
+.highlighted-text {
+   color: #FF5F00;
+}
+
+.profile-container { 
+   margin-top: 100px;
+   color: aliceblue;
+}
+
+.profile-parent {
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+
+.btn.highlighted-btn {
+   background: #FBCA1F;
+   font-family: inherit;
+   padding: 0.6em 1.3em;
+   font-weight: 900;
+   font-size: 18px;
+   border: 3px solid black;
+   border-radius: 0.4em;
+   box-shadow: 0.1em 0.1em;
+
+}
+
+.btn.highlighted-btn:hover {
+   transform: translate(-0.05em, -0.05em);
+   box-shadow: 0.15em 0.15em;
+}
+
+.btn.highlighted-btn:active {
+   transform: translate(0.05em, 0.05em);
+   box-shadow: 0.05em 0.05em;
+}
+
+.primary-text h1 {
+   margin-top: 10px;
+   font-family: 'Xanh Mono', monospace;
+}
+
+.profile-options {
+   border-radius: 10px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+
+}
+
+.profile-options a {
+   margin: 0px 5px 0px 5px;
+}
+
+.profile-role-tagline {
+   font-family: 'Roboto Mono', monospace;
+   font-size: small;
+}
+
+.profile-picture {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0 3px 0px 0px #73777B;
+   border-radius: 50%;
+   height: 300px;
+   width: 300px;
+   background-color: #FFFDE3;
+   overflow: hidden;
+}
+/* /src/assets/WhatsApp_Image_2022-11-08_at_14.50.57-removebg-preview.png */
+.profile-picture-background {
+   height: 100%;
+   width: 90%;
+   background-image: url('/src/assets/WhatsApp_Image_2022-11-08_at_14.50.57-removebg-preview.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+@media(max-width : 768px) {
+   .profile-parent {
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .profile-parent {
+      display: flex;
+      justify-content: center;
+   }
+
+   .profile-picture {
+      margin-top: 50px;
+   }
+}
+
+@media (min-width: 770px) and (max-width : 986px) {
+   .profile-parent {
+      padding: 1em;
+   }
+}
